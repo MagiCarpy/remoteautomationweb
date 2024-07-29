@@ -1,0 +1,5 @@
+THIS IS HOW YOU USE THIS REMOTE AUTOMATION WEBSITE:
+
+THINGS TO ADD:
+AUTHENTICATION (for dorm use?)
+API for toggling electronics

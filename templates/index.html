@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Remote Automation Website</title>
+        <meta charset="UTF-8">
+        <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+
+    <body>
+        <h1>Remote Automation Website</h1><h3>Logged in as: {{ session['username'] }}</h3>
+        <a href="logout" onclick="loggedOut()"> LOGOUT </a>
+        <fieldset>
+            <legend><h2>Device Status</h2></legend>
+            <table>
+                <tr>
+                    <th>Lightbulb</th>
+                    <th>Fan</th>
+                </tr>
+                <tr>
+                    <td>
+                        <form method="POST">
+                            <input type="submit" name="lightSwitch" value="Toggle" />
+                        </form>
+                    </td>
+
+                    <td>
+                        On/Off
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <script>
+            function loggedOut() {
+                alert("Logged Out");
+            }
+        </script>
+        <script src=" {{ url_for('static', filename='javascript/script.js') }} "></script>
+    </body>
+
+</html>

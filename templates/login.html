@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Login</h1>
+      <br>
+      <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        {{ form.username }}
+        {{ form.password }}
+        {{ form.submit }}
+      </form>
+    </div>
+    <a href="logout" onclick="loggedOut()"> LOGOUT </a>
+    <script>
+      function loggedOut() {
+        alert("Logged Out");
+      }
+      </script>
+      
+  </body>
+</html>
