@@ -1,4 +1,19 @@
-THIS IS HOW YOU USE THIS REMOTE AUTOMATION WEBSITE:
+REMOTE AUTOMATION WEBSITE LOCAL SETUP:
+
+  #virtual environment creation and start
+
+python -m venv /path/to/new/virtual/environment 
+</path/to/new/virtual/environment>\Scripts\activate.bat
+
+  #installs python libraries only to virtual environment
+
+pip install -r requirements.txt 
+
+  # to shutdown virtual environment
+
+deactivate
+
+=======================================================
 
 THINGS TO ADD:
 AUTHENTICATION (for dorm use?)
